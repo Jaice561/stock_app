@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+    {% autoescape off %}  
+    {{ plot_div }}  
+    {% endautoescape %}
     {{ response }}
     <br>
     {{ response1 }}
@@ -15,6 +18,5 @@
     {% endfor %}
     <br>
     {{ financial }}
-    <p></p>
 </body>
 </html>
