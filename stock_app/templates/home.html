@@ -6,17 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    {% autoescape off %}  
-    {{ plot_div }}  
+    <h1>Stock Trend For Today</h1>
+    {% autoescape off %} 
+    {{ fig }} 
     {% endautoescape %}
-    {{ response }}
     <br>
-    {{ response1 }}
-    <br>
-    {% for i in response_new %}
-    <p>{{ i.headline }}</p>
-    {% endfor %}
-    <br>
-    {{ financial }}
+    
+    <!-- {{ financial }} -->
 </body>
 </html>
